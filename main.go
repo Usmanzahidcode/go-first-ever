@@ -7,7 +7,7 @@ import (
 
 func main() {
 	name := readName()
-	fmt.Println("Hello,", name)
+	fmt.Println("Hello,", name) 
 
 	// Set up a simple HTTP route
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
