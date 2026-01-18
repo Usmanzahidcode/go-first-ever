@@ -4,14 +4,21 @@ import (
 	"fmt"
 )
 
-func main() {
-	var firstName string = "Usman"
-	var lastName string = "Zahid"
-	var fullName string = firstName + " " + lastName
+func main() {	
+	name := readName()
 	
-	fmt.Println("Hello there", fullName)
+    fmt.Println("Hello,", name)
 }
 
-func addNumbers(x int, y int) int {
-	return x + y
+func readName() string {
+	var name string
+	
+	fmt.Print("Enter your name: ")
+	_, err := fmt.Scan(&name)
+	
+	if err != nil {
+        fmt.Println("Error reading name:", err)
+    }
+	
+	return name
 }
