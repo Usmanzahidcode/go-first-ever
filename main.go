@@ -9,7 +9,7 @@ import (
 
 func main() {
 	fmt.Println("=======================================")
-	fmt.Println("User App with Age Calculation===========")
+	fmt.Println("User App with Age Calculation==========")
 	fmt.Println("=======================================\n")
 
 	// Collect user details
